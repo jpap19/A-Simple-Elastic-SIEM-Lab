@@ -193,6 +193,10 @@ In the “Metrics” section of the visualization editor on the right, select �
 
 5.6 Click on the “Save” button to save the visualization and then complete the rest of the settings : <br/>
 
+<img src="https://github.com/jpap19/A-Simple-Elastic-SIEM-Lab/blob/main/Images/VisualizationEvents2.png" height="150%" width="150%" alt="Nessus Essential Home Lab"/>
+<br />
+<br />
+
 <img src="https://github.com/jpap19/A-Simple-Elastic-SIEM-Lab/blob/main/Images/VisualizationEvents.png" height="150%" width="150%" alt="Nessus Essential Home Lab"/>
 <br />
 <br />
@@ -209,6 +213,11 @@ Here is how we can do that: Click on the menu icon on the top-left, then under �
 
  Click on the “Create new rule” button at the top right. Under the “Define rule” section, select the “Custom query” option from the dropdown menu. 
  Under “Custom query,” set the conditions for the rule. we are going to  use the following query (event.action: "nmap scan") to detect Nmap scan events.
+
+ 6.2 Security Alerts rules Creation: <br/>
+<img src="https://github.com/jpap19/A-Simple-Elastic-SIEM-Lab/blob/main/Images/CustomsQuerry5.png" height="150%" width="100%" alt="Nessus Essential Home Lab"/>
+<br />
+<br />
 
 This query will match all events with the action “nmap_scan.” Then click “Continue.” Under the “About rule” section, give your rule a name and a description (Nmap Scan Detection).
 Set the severity level for the alert, which can help you prioritize alerts based on their importance. Keep all the other default settings under “Schedule rule” and click “Continue.”
